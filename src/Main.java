@@ -10,6 +10,7 @@ import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static java.util.stream.Collectors.toMap;
 import static util.BoardTemplate.BOARD_TEMPLATE;
 
 public class Main {
@@ -20,7 +21,7 @@ public class Main {
 
     public static void main(String[] args) {
         final var positions = Stream.of(args)
-                .collect(Collectors.toMap(
+                .collect(toMap(
                         k -> k.split(";")[0],
                         v -> v.split(";")[1]
                 ));

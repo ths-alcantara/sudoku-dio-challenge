@@ -1,10 +1,5 @@
-import ui.custom.frame.MainFrame;
-import ui.custom.panel.MainPanel;
 import ui.custom.screen.MainScreen;
 
-import javax.swing.*;
-import java.awt.*;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toMap;
